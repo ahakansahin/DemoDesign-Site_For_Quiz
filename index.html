@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+ 
+</head>
+<body>
+    <div class="start-quiz">
+        <span>Start Quiz</span>
+    </div>
+    <div class="question-panel">
+        <div class="question-panel__header">
+            <h3>Quiz App</h3>
+            <div class="timer"><span class="timer-text"></span><span class="timer-number"></span></div>
+        </div>
+        <div class="timer-line"></div>
+        <div class="question-panel__body">
+            <div class="question-text"></div>
+            <div class="option-list">
+                <div class="option"><div><b>A:</b><span></span></div></div>
+                <div class="option"><div><b>B:</b><span></span></div></div>
+                <div class="option"><div><b>C:</b><span></span></div></div>
+                <div class="option"><div><b>D:</b><span></span></div></div>
+            </div>
+        </div>
+        <div class="question-panel__footer">
+            <div class="question-number"><span class="question-number__present"></span>/<span class="question-number__total"></span></div>
+            <div class="btn-next">Sonraki Soru</div>
+            <div class="btn-last">Testi Bitir</div>
+        </div>
+    </div>
+    <div class="result-panel">
+        <div class="result-icon"><i class="fas fa-crown"></i></div>
+        <div class="result-text">
+            Toplam <span class="result-text__total"></span> sorudan <span class="result-text__correct"></span> doğru cevap verdiniz.
+        </div>
+        <div class="result-panel__buttons">
+            <div class="again-test">Tekrar Başlat</div>
+            <div class="finish-test">Testi Bitir</div>
+        </div>
+    </div>
+
+    <script src="soru.js"></script>
+    <script src="quiz.js"></script>
+    <script src="ui.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
